@@ -1,0 +1,22 @@
+.title {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(11, auto);
+    justify-content: center;
+    height: 6rem;
+    width: 37rem;
+}
+
+.letter {
+    text-shadow: 1px 1px 2px #363a6677;
+    font-size: 5rem;
+    cursor: default;
+}
+
+.letter:hover {
+    font-size: 6rem;
+}
+
+.a {
+    font-size: 6rem;
+}

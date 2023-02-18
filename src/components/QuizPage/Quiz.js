@@ -6,7 +6,7 @@ import './Quiz.css'
 
 export default function Quiz(props) {
     const {category, difficulty, setStart} = props
-    const [questions, setQuestions] = React.useState([])
+    const [questions, setQuestions] = React.useState(null)
 
     React.useEffect(() => {
         fetch(`https://opentdb.com/api.php?amount=15&category=${category}&difficulty=${difficulty}&type=multiple`)
@@ -18,7 +18,6 @@ export default function Quiz(props) {
         if(questions[question].correct_answer === answer){
             return true
         }else{
-            //console.log(`${question} is false, your answer is ${answer} but true answer is ${questions[question].correct_answer}`)
             return false
         }
     }
@@ -65,8 +64,8 @@ export default function Quiz(props) {
     return (
         <main>
             <Title />
-            <Questions  questions={questions}/>
-            <End checkQuiz={checkQuiz} setStart={setStart}/> 
+            {questions ? <Questions  questions={questions} /> : "Questions loading..." }
+            {questions ? <End checkQuiz={checkQuiz} setStart={setStart}/> : '' }
         </main>
     )
 }

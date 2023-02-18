@@ -1,0 +1,10 @@
+.timeUp {
+    width: 50%;
+    height: 400px;
+    background-color: #F7B32B;
+    position: absolute;
+    top: 25%;
+    left: 200px;
+
+    border: 2px solid red;
+}

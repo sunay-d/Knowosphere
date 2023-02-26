@@ -27,7 +27,6 @@ export default function EntryPage(props) {
                         <option value="23">History</option>
                         <option value="17">Science</option>
                         <option value="20">Mythology</option>
-                        <option value="19">Mathematics</option>
                         <option value="15">Video Games</option>
                         <option value="18">Computer Science</option>
                     </select>

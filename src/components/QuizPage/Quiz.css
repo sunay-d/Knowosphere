@@ -76,3 +76,10 @@ main .btn{
     pointer-events: none;
 }
 
+@media screen and (max-width: 1000px) {
+    .answers {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

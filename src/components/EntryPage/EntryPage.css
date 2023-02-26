@@ -63,4 +63,16 @@ header .btn:hover {
     background-color: #ff1911;
 }
 
+@media screen and (max-width: 1000px) {
+
+    .start-game {
+        width: 100%;
+    }
+    
+    #difficulty {
+        margin: 0;
+        padding: 0;
+    }
+}
+
 
